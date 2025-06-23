@@ -1,0 +1,197 @@
+body{
+    font-family: cursive;
+    background-color: aquamarine;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-segitiga {
+    border: solid 1px;
+    border-color: rgb(20, 19, 20);
+    background-color: rgb(34, 135, 168);
+    margin: 10px;
+    width: 20%;
+    height: 10%;
+    border-radius: 20px;
+}
+
+.navbar-jajarGenjang {
+    border: solid 1px;
+    border-color: rgb(20, 19, 20);
+    background-color: rgb(116, 59, 209);
+    margin: 10px;
+    width: 20%;
+    height: 10%;
+    border-radius: 20px;
+}
+
+
+main {
+    display: flex;
+    gap: 32px;
+   
+}
+
+main>section {
+    
+    flex: 1;
+    text-align: center;
+}
+
+form{
+    width: 400px;
+    border: solid 6px;
+    margin: 30px;
+    margin-left: 110px;
+    padding: 50px;
+    border-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+label{
+    padding-right: 200px;    
+}
+
+.h2-luas{
+    text-align: center;
+    padding: 5px;
+}
+.enter-tinggi{
+    padding: 37px;
+}
+
+.h2-keliling{
+    text-align: center;
+    padding: 5px;
+
+}
+
+/* .section-form-luas{
+    height: 100%;
+    width: 100%;
+} */
+
+.section-form-keliling{
+    height: 100%;
+    width: 100%;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left : 20px;
+    padding-right: 10px;
+}
+
+.form-luas{
+    text-align: left; 
+    width: 400px;
+    height: 430px;
+    border: solid 6px;
+    margin-top: 0px;
+    padding-top: 0px;
+    border: none;
+    border-radius: 15px;
+}
+
+
+.form-keliling{
+    text-align: left;
+    width: 400px;
+    border: solid 6px;
+    margin-top: 0 ;
+    padding-top: 0;
+    border: none;
+    border-radius: 15px;
+}
+
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.button-9 {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+.input-hasil{
+    width: 100%;
+    height: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: aquamarine;
+    color: #333;
+}
+
+
+.formula-img{
+    height: 200px;
+    background-position: center;
+    border: double 6px;
+    border-color: burlywood;
+    background-size: cover;
+    justify-self: center;
+}
+
+.img-luas {
+    width: 300px;
+    height: 300px;
+
+    background-image: url('/asets gambar/rumus luas segitiga.png');
+    margin-bottom: 40px;
+}
+
+.img-keliling {
+    width: 420px;
+    height: 300px;
+
+    background-image: url('/asets gambar/Rumus Keliling Segitiga .png');
+    margin-bottom: 40px;
+
+}
