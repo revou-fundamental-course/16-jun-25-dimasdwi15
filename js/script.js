@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // KELILING SEGITIGA
-    // const btnKeliling = document.querySelector(".form-keliling .button-9");
+    const btnKeliling = document.querySelector(".form-keliling .button-9");
     btnKeliling.addEventListener("click", function () {
         const sisi1 = parseFloat(document.getElementById("sisi1").value);
         const sisi2 = parseFloat(document.getElementById("sisi2").value);
