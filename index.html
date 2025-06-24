@@ -2,117 +2,92 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Matematik</title>
-
-    <!-- CSS External -->
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Katik</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <!-- Head Content -->
     <header>
         <h1>Welcome to Katik</h1>
-        <p>Selamat datang di Katik – Kalkulator Segitiga Online,
-            Aplikasi web sederhana yang siap bantu kamu menghitung luas dan keliling segitiga dengan cepat dan mudah.
-        </p>
+        <p>Selamat datang di Katik – Kalkulator Segitiga Online. Aplikasi web sederhana untuk menghitung luas dan
+            keliling segitiga dengan cepat dan mudah.</p>
     </header>
 
-
-
-    <!-- Main Content -->
-    <main>
+    <main class="main-content">
         <!-- Luas Segitiga -->
+
+        
         <section>
-            <header>
-                <h2>Hitung Luas Sgitiga</h2>
-            </header>
+            <h2>Hitung Luas Segitiga</h2>
+            <div class="formula-img img-luas"></div>
 
-            <!-- Konten Luas -->
-            <div class="formula-img img-luas"> </div>
-
-
-            <!-- Form Luas -->
             <div class="form-content">
                 <form class="form-luas">
+                    <h3>Form Luas Segitiga</h3>
+                    <h4>rumus luas segitiga : 1/2 * Alas * Tinggi </h4>
 
-                    <header class="h2-luas">
-                        <h2>Form Luas Segitiga</h2>
-                    </header>
+                    <div class="input-group">
+                        <label for="alas">Alas :</label>
+                        <input type="number" id="alas" name="alas" placeholder="Masukkan Alas Segitiga" />
+                    </div>
 
-                    <section class="section-form-luas">
-                        <div>
-                            <label for="alas">Alas :</label>
-                            <input type="number" id="alas" name="alas" placeholder="Masukkan Alas Segitiga">
-                        </div>
+                    <div class="input-group">
+                        <label for="tinggi">Tinggi :</label>
+                        <input type="number" id="tinggi" name="tinggi" placeholder="Masukkan Tinggi Segitiga" />
+                    </div>
 
-                        <div>
-                            <label for="tinggi">Tinggi :</label>
-                            <input type="number" id="tinggi" name="tinggi" placeholder="Masukkan Tinggi Segitiga">
-                        </div> 
-                        
-                        <div class="enter-tinggi"></div>
+                    <button type="button" class="button-9">Hitung</button>
 
-                        <div>
-                            <button class="button-9" role="button">Hitung</button>
-                        </div>
-
-                        <div style="margin: 10px;">
-                            <label for="hasil">Hasil Luas :</label>
-                            <input type="text" id="hasil" name="hasil-luas" placeholder=" " readonly
-                                class="input-hasil">
-                        </div>
-                    </section>
+                    <div class="input-group">
+                        <label for="hasil">Hasil Luas :</label>
+                        <input type="text" id="hasil" name="hasil-luas" placeholder=" " readonly class="input-hasil" />
+                    </div>
+                    
                 </form>
-
+            </div>
         </section>
 
         <!-- Keliling Segitiga -->
         <section>
-            <header>
-                <h2>Hitung Keliling Segitiga</h2>
-                <div class="formula-img img-keliling"></div>
+            <h2>Hitung Keliling Segitiga</h2>
+            <div class="formula-img img-keliling"></div>
 
-            </header>
-            <!-- Form Keliling -->
-            <form class="form-keliling">
-                <header class="h2-keliling">
-                    <h2>Form Keliling Segitiga</h2>
-                </header>
+            <div class="form-content">
+                <form class="form-keliling">
+                    <h3>Form Keliling Segitiga</h3>
+                    <h4>Rumus keliling segitiga : sisi AB + sisi BC + sisi CA  </h4>
 
-                <section class="section-form-keliling">
-                    <div>
-                        <label for="sisi1">Sisi 1 :</label>
-                        <input type="number" id="sisi1" name="alas" placeholder="Masukkan Sisi Pertama Segitiga">
+                    <div class="input-group">
+
+                        <label for="sisi1">Sisi AB :</label>
+                        <input type="number" id="sisi1" name="sisi1" placeholder="Masukkan Sisi Pertama" />
                     </div>
 
-                    <div>
-                        <label for="sisi2">Sisi 2 :</label>
-                        <input type="number" id="sisi2" name="alas" placeholder="Masukkan Sisi Kedua Segitiga">
+                    <div class="input-group">
+                        <label for="sisi2">Sisi BC :</label>
+                        <input type="number" id="sisi2" name="sisi2" placeholder="Masukkan Sisi Kedua" />
                     </div>
 
-                    <div>
-                        <label for="sisi3">Sisi 3 :</label>
-                        <input type="number" id="sisi3" name="tinggi" placeholder="Masukkan Sisi Ketiga Segitiga">
+                    <div class="input-group">
+                        <label for="sisi3">Sisi CA :</label>
+                        <input type="number" id="sisi3" name="sisi3" placeholder="Masukkan Sisi Ketiga" />
                     </div>
 
-                    <div>
-                        <button class="button-9" role="button">Hitung</button>
+                    <button type="button" class="button-9">Hitung</button>
+
+                    <div class="input-group">
+                        <label for="hasil-keliling">Hasil Keliling :</label>
+                        <input type="text" id="hasil-keliling" name="hasil-keliling" placeholder=" " readonly
+                            class="input-hasil" />
                     </div>
 
-                    <div style="margin: 10px;">
-                        <label for="hasil">Hasil Luas :</label>
-                        <input type="text" id="hasil" name="hasil-luas" placeholder=" " readonly class="input-hasil">
-                    </div>
-
-                </section>
-            </form>
+                </form>
             </div>
         </section>
     </main>
 
-    <!-- Footer Content -->
     <footer>
         <p>&copy; 2023 Katik. All rights reserved.</p>
         <p>Created by dimasdwi15</p>
@@ -120,7 +95,6 @@
 
     <script src="/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 </body>
 
 </html>

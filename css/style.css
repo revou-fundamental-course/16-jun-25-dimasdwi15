@@ -1,197 +1,119 @@
-body{
-    font-family: cursive;
-    background-color: aquamarine;
+body {
+    font-family: math;
+    background-color: rgb(197, 223, 224);
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-.navbar-segitiga {
-    border: solid 1px;
-    border-color: rgb(20, 19, 20);
-    background-color: rgb(34, 135, 168);
-    margin: 10px;
-    width: 20%;
-    height: 10%;
-    border-radius: 20px;
+header {
+    padding: 20px;
 }
-
-.navbar-jajarGenjang {
-    border: solid 1px;
-    border-color: rgb(20, 19, 20);
-    background-color: rgb(116, 59, 209);
-    margin: 10px;
-    width: 20%;
-    height: 10%;
-    border-radius: 20px;
-}
-
 
 main {
     display: flex;
+    flex-wrap: wrap;
     gap: 32px;
-   
+    justify-content: space-around;
+    padding: 30px;
 }
 
 main>section {
-    
-    flex: 1;
-    text-align: center;
+    flex: 1 1 400px;
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 20px 15px 20px;
+    padding: 0px;
 }
 
-form{
-    width: 400px;
-    border: solid 6px;
-    margin: 30px;
-    margin-left: 110px;
-    padding: 50px;
-    border-color: whitesmoke;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+h2,
+h3 {
+    margin-bottom: 15px;
 }
 
-label{
-    padding-right: 200px;    
-}
+.formula-img {
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
 
-.h2-luas{
-    text-align: center;
-    padding: 5px;
-}
-.enter-tinggi{
-    padding: 37px;
-}
-
-.h2-keliling{
-    text-align: center;
-    padding: 5px;
 
 }
 
-/* .section-form-luas{
-    height: 100%;
-    width: 100%;
-} */
+.img-luas {
+    background-image: url(https://id-static.z-dn.net/files/d36/b583c2cb8051c6b49f1d2df66ca16c41.jpg);
+    width: 100px;
+    height: 100px;
+    place-self: center;
+}
 
-.section-form-keliling{
-    height: 100%;
-    width: 100%;
+.img-keliling {
+    background-image: url(https://id-static.z-dn.net/files/d36/b583c2cb8051c6b49f1d2df66ca16c41.jpg);
+    width: 100px;
+    height: 100px;
+    place-self: center;
 }
 
 .form-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding-left : 20px;
-    padding-right: 10px;
 }
 
-.form-luas{
-    text-align: left; 
-    width: 400px;
-    height: 430px;
-    border: solid 6px;
-    margin-top: 0px;
-    padding-top: 0px;
-    border: none;
+form {
+    width: 100%;
+    padding: 20px;
     border-radius: 15px;
-}
-
-
-.form-keliling{
     text-align: left;
-    width: 400px;
-    border: solid 6px;
-    margin-top: 0 ;
-    padding-top: 0;
-    border: none;
-    border-radius: 15px;
+    box-sizing: border-box;
+
 }
 
+.input-group {
+    margin-bottom: 15px;
+}
 
-input[type=number] {
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="text"] {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
+    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 6px;
     box-sizing: border-box;
 }
 
-
-.button-9 {
-  appearance: button;
-  backface-visibility: hidden;
-  background-color: #405cf5;
-  border-radius: 6px;
-  border-width: 0;
-  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
-  font-size: 100%;
-  height: 44px;
-  line-height: 1.15;
-  margin: 12px 0 0;
-  outline: none;
-  overflow: hidden;
-  padding: 0 25px;
-  position: relative;
-  text-align: center;
-  text-transform: none;
-  transform: translateZ(0);
-  transition: all .2s,box-shadow .08s ease-in;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-9:disabled {
-  cursor: default;
-}
-
-.button-9:focus {
-  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
-}
-
-.input-hasil{
-    width: 100%;
-    height: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    background-color: aquamarine;
+.input-hasil {
+    background-color: #dfffee;
     color: #333;
 }
 
-
-.formula-img{
-    height: 200px;
-    background-position: center;
-    border: double 6px;
-    border-color: burlywood;
-    background-size: cover;
-    justify-self: center;
+.button-9 {
+    width: 100%;
+    appearance: button;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
-.img-luas {
-    width: 300px;
-    height: 300px;
-
-    background-image: url('/asets gambar/rumus luas segitiga.png');
-    margin-bottom: 40px;
+.button-9:hover {
+    background-color: #304de5;
 }
 
-.img-keliling {
-    width: 420px;
-    height: 300px;
-
-    background-image: url('/asets gambar/Rumus Keliling Segitiga .png');
-    margin-bottom: 40px;
-
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
 }
