@@ -96,7 +96,7 @@ input[type="text"] {
     color: #333;
 }
 
-.button-hasil {
+.button_hasil {
     width: 100%;
     appearance: button;
     background-color: #405cf5;
@@ -109,7 +109,7 @@ input[type="text"] {
     transition: background-color 0.2s ease;
 }
 
-.button-hasil:hover {
+.button_hasil:hover {
     background-color: #304de5;
 }
 
@@ -147,7 +147,7 @@ footer {
         padding: 10px;
     }
 
-    .button-hasil {
+    .button_hasil {
         font-size: 14px;
         padding: 10px;
     }
@@ -186,7 +186,7 @@ footer {
 
     input[type="number"],
     input[type="text"],
-    .button-hasil {
+    .button_hasil {
         font-size: 13px;
         padding: 8px;
     }

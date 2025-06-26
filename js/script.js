@@ -1,6 +1,8 @@
+console.log("Script loaded successfully!");
+
 document.addEventListener("DOMContentLoaded", function () {
     // LUAS SEGITIGA
-    const btnLuas = document.querySelector(".form-luas .button-9");
+    const btnLuas = document.querySelector(".form-luas .button_hasil");
     btnLuas.addEventListener("click", function () {
         const alas = parseFloat(document.getElementById("alas").value);
         const tinggi = parseFloat(document.getElementById("tinggi").value);
@@ -22,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // KELILING SEGITIGA
-    const btnKeliling = document.querySelector(".form-keliling .button-9");
+    const btnKeliling = document.querySelector(".form-keliling .button_hasil");
     btnKeliling.addEventListener("click", function () {
         const sisi1 = parseFloat(document.getElementById("sisi1").value);
         const sisi2 = parseFloat(document.getElementById("sisi2").value);
@@ -41,5 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const keliling = sisi1 + sisi2 + sisi3;
         document.getElementById("hasil-keliling").value = keliling.toFixed(2);
+        
     });
 });
