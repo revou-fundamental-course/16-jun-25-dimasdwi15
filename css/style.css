@@ -25,6 +25,8 @@ main>section {
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 20px 15px 20px;
     padding: 0px;
+
+    
 }
 
 h2,
@@ -94,7 +96,7 @@ input[type="text"] {
     color: #333;
 }
 
-.button-9 {
+.button-hasil {
     width: 100%;
     appearance: button;
     background-color: #405cf5;
@@ -107,7 +109,7 @@ input[type="text"] {
     transition: background-color 0.2s ease;
 }
 
-.button-9:hover {
+.button-hasil:hover {
     background-color: #304de5;
 }
 
@@ -116,4 +118,84 @@ footer {
     padding: 20px;
     background-color: #222;
     color: #fff;
+}
+
+
+
+
+/* maksimum lebar 768px */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    main > section {
+        max-width: 100%;
+        margin: 0 auto 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px;
+    }
+
+    .form-content {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    input[type="number"],
+    input[type="text"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .button-hasil {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2, h3, h4 {
+        font-size: 18px;
+    }
+
+    .img-luas,
+    .img-keliling {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 20px;
+    }
+}
+
+/*maksimum lebar 480px */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header p {
+        padding: 0 10px;
+    }
+
+    .img-luas,
+    .img-keliling {
+        width: 70px;
+        height: 70px;
+    }
+
+    input[type="number"],
+    input[type="text"],
+    .button-hasil {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2, h3, h4 {
+        font-size: 16px;
+    }
 }
